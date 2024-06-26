@@ -109,3 +109,11 @@
 本基于 JavaWeb 技术的在线考试系统，通过科学合理的功能设计和完善的管理机制，为教育机构和企业提供了一个高效、公平、便捷的考试解决方案。无论是管理员还是用户，都能在系统中享受到便捷的服务和高效的操作体验。该系统不仅提高了考试管理的效率和质量，还为教学评估和教学改进提供了有力的支持，有助于推动教育信息化的发展和创新。
 
 #### 使用说明
+
+创建数据库，执行数据库脚本 修改jdbc数据库连接参数 下载安装maven依赖jar 启动idea中的springboot项目
+
+后台地址：http://localhost:8080/springbootsu39z/admin/dist/index.html
+
+管理员  abo 密码 abo
+
+前台地址：http://localhost:8080/springbootsu39z/front/index.html
