@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dao.KaoshipingfenDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.entity.KaoshipingfenEntity" id="kaoshipingfenMap">
+        <result property="kemu" column="kemu"/>
+        <result property="shijuan" column="shijuan"/>
+        <result property="pingfen" column="pingfen"/>
+        <result property="xuehao" column="xuehao"/>
+        <result property="xingming" column="xingming"/>
+        <result property="banji" column="banji"/>
+    </resultMap>
+
+	<select id="selectListVO"
+		resultType="com.entity.vo.KaoshipingfenVO" >
+		SELECT * FROM kaoshipingfen  kaoshipingfen         
+        <where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+	
+	<select id="selectVO"
+		resultType="com.entity.vo.KaoshipingfenVO" >
+		SELECT  kaoshipingfen.* FROM kaoshipingfen  kaoshipingfen 	
+ 		<where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+
+    <select id="selectListView"
+		resultType="com.entity.view.KaoshipingfenView" >
+
+		SELECT  kaoshipingfen.* FROM kaoshipingfen  kaoshipingfen 	        
+        <where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+	
+	<select id="selectView"
+		resultType="com.entity.view.KaoshipingfenView" >
+		SELECT * FROM kaoshipingfen  kaoshipingfen <where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+	
+</mapper>
